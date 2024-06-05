@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="{% static 'Product.css' %}">
+    <link rel="icon" href="{% static 'Media/ShopLogo.png' %}">  
+</head>
+
+<body>
+
+    <nav>
+
+        <div id="LogoSection">   
+            <img src="{% static 'Media/ShopLogo.png' %}">
+            <h2>SHOP.Io</h2>
+        </div>
+
+
+        <div id="SearchBar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/Products">Product</a></li>
+            <li>Electronics</li>
+            <li>Trends</li>
+            <li id = "Cart">
+                <img loading="lazy" src="{% static 'Media/Cart.png' %}" alt="">
+            </li>
+        </ul>
+
+    </nav>
+
+    <div id="FilterNav">
+        <select id = "FilterProducts">
+            <option>All</option>
+            <option>Fashion</option>
+            <option>Electronics</option>
+            <option>Jewelery</option>
+        </select>
+    </div>
+
+
+    <main>
+
+
+    </main>
+    
+</body>
+<script src="{% static 'Product.js' %}"></script>
+</html>
